@@ -28,9 +28,18 @@ while True:
 
         if(choice == "1"):
             print(num1, "+", num2, "=", add(num1, num2))
-        if(choice == "2"):
+        elif(choice == "2"):
              print(num1, "-", num2, "=", subtract(num1, num2))
-        if(choice == "3"):
+        elif(choice == "3"):
              print(num1, "*", num2, "=", multiply(num1, num2))
-        if(choice == "4"):
+        elif(choice == "4"):
              print(num1, "/", num2, "=", divide(num1, num2))
+
+        #check if user would like to do more calculations
+        next_calc = input("Would you like to do another calculation?(yes/no)")
+        if(next_calc == "no"):
+            break
+
+    else:
+        print("Invalid Input")
+
